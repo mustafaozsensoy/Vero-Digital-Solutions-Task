@@ -142,7 +142,7 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    // Don't print the raw response
+   
 }
 
 $data = json_decode($response, true);
@@ -190,7 +190,7 @@ if (!empty($data)) {
 <!-- JavaScript Auto Refresh Function -->
 <script>
     setInterval(function() {
-        // Reload the page every 60 minutes
+        
         location.reload();
     }, 3600000);
 </script>
@@ -212,19 +212,15 @@ if (!empty($data)) {
 
 <!-- JavaScript for Modal and Image Functionality -->
 <script>
-    // Get the modal
+    
     var modal = document.getElementById("myModal");
 
-    // Get the image input
     var imageInput = document.getElementById("imageInput");
 
-    // Get the img element to display the selected image
     var selectedImage = document.getElementById("selectedImage");
 
-    // Get the <span> element to close the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
