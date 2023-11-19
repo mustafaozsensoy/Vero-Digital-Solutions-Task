@@ -174,7 +174,7 @@ if (!empty($data)) {
         tr = table.getElementsByTagName("tr");
 
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1]; // Searching in the second column (title)
+            td = tr[i].getElementsByTagName("td")[1]; // Searching in the title
             if (td) {
                 txtValue = td.textContent || td.innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
